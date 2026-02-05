@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Library - Secure Web Application</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <header class="hero">
+        <h1>Movie Library</h1>
+        <p class="subtitle">A secure web application for organizing your movie collection</p>
+        <nav style="margin-top: 20px;">
+            <a href="/">Home</a> •
+            <a href="/movies">Movies</a> •
+            <a href="/about">About</a> •
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Welcome to Movie Library</h2>
+            <p>
+                Movie Library is a <strong>secure web application</strong> that allows authenticated users to manage their movie collection. Create an account, log in, and start adding your favorite movies to your personal library.
+            </p>
+        </section>
+
+        <section>
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>User Authentication:</strong> Secure login and registration with password hashing (bcrypt)</li>
+                <li><strong>Session Management:</strong> Session-based authentication with MongoDB session storage</li>
+                <li><strong>CRUD Operations:</strong> Create, Read, Update, and Delete movies through Web UI</li>
+                <li><strong>Realistic Data:</strong> 23 movies with 7 meaningful fields (title, genre, director, year, rating, duration, description)</li>
+                <li><strong>Security:</strong> HttpOnly cookies, authorization middleware, secure error handling</li>
+                <li><strong>Professional UI:</strong> Responsive design with modern styling</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Team Members</h2>
+            <p><strong>Yelzhan Zhandos, Issa Akhmet</strong> — Group SE-2426</p>
+        </section>
+
+        <section>
+            <h2>Getting Started</h2>
+            <p>To manage your movie collection, you need to:</p>
+            <ol>
+                <li><a href="/register" class="btn btn-primary">Create an Account</a></li>
+                <li><a href="/login" class="btn btn-primary">Log In</a></li>
+                <li><a href="/movies" class="btn btn-primary">Go to Movies</a></li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Security Features</h2>
+            <ul>
+                <li><strong>Password Hashing:</strong> All passwords are hashed using bcrypt algorithm</li>
+                <li><strong>Authentication Middleware:</strong> Protects write operations (CREATE, UPDATE, DELETE)</li>
+                <li><strong>Session Security:</strong> HttpOnly flag prevents JavaScript access to cookies</li>
+                <li><strong>Input Validation:</strong> All user inputs are validated on server and client</li>
+                <li><strong>Error Handling:</strong> Generic error messages to prevent information leakage</li>
+                <li><strong>Authorization:</strong> Users can only modify their own movies</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Technical Stack</h2>
+            <ul>
+                <li><strong>Backend:</strong> Node.js + Express.js</li>
+                <li><strong>Database:</strong> MongoDB</li>
+                <li><strong>Authentication:</strong> express-session + bcrypt</li>
+                <li><strong>Frontend:</strong> HTML5 + CSS3 + JavaScript (ES6)</li>
+                <li><strong>Session Storage:</strong> MongoDB (connect-mongo)</li>
+            </ul>
+        </section>
+
+        <section style="text-align: center; margin-top: 50px;">
+            <h3>Ready to explore?</h3>
+            <a href="/movies" class="btn btn-primary" style="padding: 15px 30px; font-size: 1.1rem;">View Movie Collection</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Movie Library. Built with Node.js, Express & MongoDB. | Assignment 4</p>
+    </footer>
+
+</body>
+
+</html>
